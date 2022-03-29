@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/wallpaperbetter.com_1920x1080.jpg') 0 0 / cover no-repeat;
+}
+
+.registration {
+  width: 500px;
+  height: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
+.registration_container {
+  width: 800px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registration_tittle {
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.registration_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.registration_blocks {
+  display: flex;
+  width: 100%;
+}
+.registration_subtittle {
+  padding: 10px 0 10px 0;
+  width: 90%;
+}
+
+.registration_greeting {
+  margin-left: 60%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.registration_mail,
+.registration_password,
+.registration_passRepeat {
+  padding: 10px 0 10px 0;
+  width: 70%;
+}
+
+.registration_input_field {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: none;
+}
+
+.first_page_input {
+  height: 55px;
+}
+.registration_input_field:focus {
+  outline: none;
+  border: none;
+}
+
+.form_submit {
+  margin-top: 15px;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, #ae00ff, #b82398, #b82386, #ca157f);
+  color: #ffffff;
+  border: none;
+  box-shadow: 4px 4px 10px rgb(51, 51, 51);
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition-duration: 200ms;
+  position: relative;
+  top: 0;
+}
+.save_btn {
+  font-size: 25px;
+  padding: 5px 20px;
+}
+
+.form_submit:active {
+  top: 1px;
+  box-shadow: 2px 2px 6px rgb(51, 51, 51);
+}
+
+#gender {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+}
+
+.input_block {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(105, 105, 105, 0.61);
+  background-color: white;
+  border-radius: 10px;
+}
+.input_icon {
+  padding: 5px 10px 0 10px;
+}
+.input_icon i {
+  color: rgb(68, 68, 68);
+}
+
+.input_information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error_message {
+  color: red;
+  font-size: 15px;
+  display: none;
+}
+.skype_input {
+  margin-top: 5px;
+}

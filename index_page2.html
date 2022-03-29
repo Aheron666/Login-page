@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CookieHW1</title>
+</head>
+
+<body onload="checkCookiePageTwo()">
+    <div class="container">
+        <div class="registration_tittle">User info</div>
+        <form method="GET" id="regForm" action="" onsubmit="return false">
+            <div class="registration_container">
+                <div class="registration_greeting" id="greetings"></div>
+                <hr style="width: 100%; margin: 5px 0 20px 0;">               
+                <div class="registration_blocks">
+                    <div class="registration_block">
+                        <div class="registration_subtittle">
+                            <div class="input_information">
+                                <div class="input_tittle">First Name: *</div>
+                                <div id="name_error" class="error_message">Wrong name information</div>
+                            </div>
+                            <input type="text" id="name_input" class="registration_input_field" required>
+                        </div>
+                        <div class="registration_subtittle">
+                            <div class="input_information">
+                                <div class="input_tittle">Year of birth: *</div>
+                                <div id="birthYear_error" class="error_message">Incorrect year of birth</div>
+                            </div>
+                            <input type="text" id="birthYear_input" class="registration_input_field" required>
+                        </div>
+                        <div class="registration_subtittle">
+                            <div class="input_information">
+                                <div class="input_tittle">Phone number:</div>
+                                <div id="phone_error" class="error_message">Wrong phone number</div>
+                            </div>
+                            <input type="text" id="phone_input" class="registration_input_field" required>
+                        </div>
+                    </div>
+
+                    <div class="registration_block">
+                        <div class="registration_subtittle">
+                            <div class="input_information">
+                                <div class="input_tittle">Last Name: *</div>
+                                <div id="lastName_error" class="error_message">Wrong Last Name </div>
+                            </div>
+                            <input type="text" id="lastName_input" class="registration_input_field" required>
+                        </div>
+                        <div class="registration_subtittle">
+                            <div class="input_tittle">Gender: *</div>
+                            <select name="gender" id="gender" class="registration_input_field">
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </div>
+                        <div class="registration_subtittle skype_input">
+                            <div class="input_information">
+                                <div class="input_tittle">Skype:</div>
+                            </div>
+                            <input type="text" id="skype_input"class="registration_input_field" >
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_block">
+                    <input type="submit" id="save" class="form_submit save_btn" value="SAVE">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>CookieHW1</title>
+
+</head>
+
+
+<body onload="checkCookie()">
+    <div class="container">
+        <div class="registration_tittle">Account login</div>
+        <form method="GET" id="regForm" action="" onsubmit="return false">
+            <div class="registration">              
+                <div class="registration_block">                   
+                    <div class="registration_mail">
+                        <div class="input_information">
+                            <div id="mail_error" class="error_message">Wrong email address</div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_icon">
+                                <i class='bx bx-envelope'></i>
+                            </div>                           
+                            <input type="email" id="mail_input" class="registration_input_field first_page_input" placeholder="@mail" required>
+                        </div>
+                        
+                    </div>
+                    <div class="registration_password">
+                        <div class="input_information" id="password_errors_block">
+                            <div id="number_error" class="error_message">Password has no digit</div>
+                            <div id="bigLetter_error" class="error_message">Password has no big letter</div>
+                            <div id="smallLetter_error" class="error_message">Password has no small letter</div>
+                            <div id="passwordLength_error" class="error_message">Password must be at least 6 characters</div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_icon">
+                                <i class='bx bx-lock-alt' ></i>
+                            </div>                           
+                            <input type="password" id="password_input" class="registration_input_field first_page_input" placeholder="password" required>
+                        </div>
+                    </div>
+                    <div class="registration_passRepeat">
+                        <div class="input_information">
+                            <div id="passwordRepeat_error" class="error_message">Password must match</div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_icon">
+                                <i class='bx bx-lock-alt' ></i>
+                            </div>                           
+                            <input type="password" id="passRepeat_input" class="registration_input_field first_page_input" placeholder="repeat" required>
+                        </div>                       
+                    </div>
+                    <div class="submit_block">
+                        <input type="submit" id="submit" class="form_submit" value="LOGIN">
+                    </div>
+                   
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
